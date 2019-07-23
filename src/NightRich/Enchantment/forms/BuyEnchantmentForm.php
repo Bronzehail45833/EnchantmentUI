@@ -53,7 +53,7 @@ class BuyEnchantmentForm extends CustomForm{
         $this->ench->setLevel($level);
         $item = $player->getInventory()->getItemInHand();
         if($player->getXpLevel() > $price){
-            $item->addEnchantment($this->ench);
+            $item->$ce->addEnchantment($item, $enchants, $levels, $check);
             $player->getInventory()->setItemInHand($item);
             $player->setXpLevel($player->getXpLevel() - $price);
             $player->sendMessage(Language::translate($player->getLocale(), "buy.form.enchantment.successful"));
