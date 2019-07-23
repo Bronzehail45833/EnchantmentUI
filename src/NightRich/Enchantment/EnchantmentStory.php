@@ -28,7 +28,7 @@ class EnchantmentStory{
     /** @var array */
     public const enchantments = [
         "Sword" => [
-            9 => Enchantment::SHARPNESS,
+            100 => Enchantment::LIFESTEAL,
             12 => Enchantment::KNOCKBACK,
             13 => Enchantment::FIRE_ASPECT,
             14 => Enchantment::LOOTING,
